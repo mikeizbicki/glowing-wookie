@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    padding: 0px;
+    margin: 20px;
+    text-align:center;
+}
+
+.container {
+    /*width: 100%;*/
+    margin-left:5%;
+    margin-right:5%;
+    border: 3px black solid;
+    padding: 20px;
+    text-align: center;
+    float:center;
+}
+
+.queryobject {
+    width: 40%;
+    /*border:5px white solid;*/
+    opacity: 0.8;
+
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.queryobject:hover {
+    /*border:5px black solid;*/
+    opacity: 1;
+}
+
+.middle {
+    margin-left:5%;
+    margin-right:5%;
+
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+p {
+    color: black;
+}
+
+img {
+    width: 100%;
+           /*width: 200px;*/
+           /*height: 200px;*/
+}
