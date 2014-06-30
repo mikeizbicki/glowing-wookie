@@ -8,11 +8,21 @@ email: mike@izbicki.me
 
 github: http://github.com/mikeizbicki
 
-stackoverflow: http://stackoverflow.com/users/1241368/mike-izbicki
-
 reddit: http://reddit.com/u/PokerPirate
 
 hacker news: https://news.ycombinator.com/user?id=jackpirate
+
+**Daniel Ramirez**
+
+email: drami025@ucr.edu 
+
+github: http://github.com/drami025
+
+stackoverflow: https://stackoverflow.com/users/3791448/daniel-ramirez
+
+reddit: http://reddit.com/u/drami025
+
+hacker news: https://news.ycombinator.com/user?id=drami025
         
 **Kevin Higuera**        
 
