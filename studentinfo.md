@@ -48,18 +48,6 @@ reddit: http://www.reddit.com/user/kawaii5/
 
 hacker news: https://news.ycombinator.com/user?id=kawaii5
 
-**Dat Do**
-
-email: datdo@rocketmail.com
-
-github: http://github.com/CheriPai
-
-stackoverflow: http://stackoverflow.com/users/3734820/user3734820
-
-reddit: http://reddit.com/u/CheriPai
-
-hacker news: https://news.ycombinator.com/user?id=CheriPai
-
 **Jacob Xu**
 
 email: jxu023@ucr.edu
@@ -102,4 +90,26 @@ email: ldiaz011@ucr.edu
 
 github: http://github.com/ldiaz011
 
+**Dat Do**
 
+email: datdo@rocketmail.com
+
+github: http://github.com/CheriPai
+
+stackoverflow: http://stackoverflow.com/users/3734820/user3734820
+
+reddit: http://reddit.com/u/CheriPai
+
+hacker news: https://news.ycombinator.com/user?id=CheriPai
+
+**Paul Starkey**
+
+email: pstar001@ucr.edu
+
+github: https://github.com/holidaylvr
+
+stackoverflow: http://stackoverflow.com/users/3742656/user3742656
+
+reddit: http://www.reddit.com/user/pstar001/
+
+hacker news: https://news.ycombinator.com/user?id=holidaylvr
