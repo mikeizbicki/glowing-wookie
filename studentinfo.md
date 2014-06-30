@@ -13,3 +13,14 @@ stackoverflow: http://stackoverflow.com/users/1241368/mike-izbicki
 reddit: http://reddit.com/u/PokerPirate
 
 hacker news: https://news.ycombinator.com/user?id=jackpirate
+
+**Jacob Xu**
+email: jxu023@uc.redu
+
+github: http://github.com/jxu023
+
+http://stackoverflow.com/users/3773643/user3773643
+
+reddit: http://reddit.com/u/FeigntMango
+
+hacker news: https://news.ycombinator.com/user?id=FeigntMango
