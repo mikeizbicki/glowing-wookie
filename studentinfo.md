@@ -13,3 +13,15 @@ stackoverflow: http://stackoverflow.com/users/1241368/mike-izbicki
 reddit: http://reddit.com/u/PokerPirate
 
 hacker news: https://news.ycombinator.com/user?id=jackpirate
+
+
+**Dat Do**
+email: datdo@rocketmail.com
+
+github: http://github.com/CheriPai
+
+stackoverflow: http://stackoverflow.com/users/3734820/user3734820
+
+reddit: http://reddit.com/u/CheriPai
+
+hacker news: https://news.ycombinator.com/user?id=CheriPai
