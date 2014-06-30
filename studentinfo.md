@@ -15,7 +15,8 @@ reddit: http://reddit.com/u/PokerPirate
 hacker news: https://news.ycombinator.com/user?id=jackpirate
 
 **Jacob Xu**
-email: jxu023@uc.redu
+
+email: jxu023@ucr.edu
 
 github: http://github.com/jxu023
 
