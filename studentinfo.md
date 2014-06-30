@@ -2,7 +2,7 @@
 
 Fork this repository with the fork button in the upper right corner.  Then edit this file to contain all the information about your user accounts.  The issue a merge request to add your information back into the main repository.
 
-**Mike Izbicki**
+**Daniel Ramirez**
 
 email: drami025@ucr.edu 
 
