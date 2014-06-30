@@ -48,3 +48,15 @@ stackoverflow: http://stackoverflow.com/users/3773643/user3773643
 reddit: http://reddit.com/u/FeigntMango
 
 hacker news: https://news.ycombinator.com/user?id=FeigntMango
+
+**Shilpa Chirackel**
+
+email: schir001@ucr.edu
+
+github: http://github.com/shilparoys
+
+stackoverflow: http://stackoverflow.com/users/3569927/user3569927
+
+reddit: http://www.reddit.com/user/schir001/
+
+hacker news: https://news.ycombinator.com/user?id=schir001
