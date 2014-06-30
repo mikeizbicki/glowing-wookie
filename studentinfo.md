@@ -13,6 +13,18 @@ stackoverflow: http://stackoverflow.com/users/1241368/mike-izbicki
 reddit: http://reddit.com/u/PokerPirate
 
 hacker news: https://news.ycombinator.com/user?id=jackpirate
+        
+**Kevin Higuera**        
+
+email:  khigu001@ucr.edu
+
+github:  https://github.com/khiguera
+
+stack overflow: http://stackoverflow.com/users/3735797/khiguera
+
+reddit: www.reddit.com/user/whiterabit84/
+
+hacker news: https://news.ycombinator.com/user?id=khigu001
 
 **Michelle Wang**
 
@@ -27,6 +39,7 @@ reddit: http://www.reddit.com/user/kawaii5/
 hacker news: https://news.ycombinator.com/user?id=kawaii5
 
 **Dat Do**
+
 email: datdo@rocketmail.com
 
 github: http://github.com/CheriPai
