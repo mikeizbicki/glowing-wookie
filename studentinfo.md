@@ -13,3 +13,11 @@ stackoverflow: http://stackoverflow.com/users/1241368/mike-izbicki
 reddit: http://reddit.com/u/PokerPirate
 
 hacker news: https://news.ycombinator.com/user?id=jackpirate
+
+**Lorraine Diaz**
+
+email: ldiaz011@ucr.edu
+
+github: http://github.com/ldiaz011
+
+
