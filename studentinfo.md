@@ -20,7 +20,7 @@ email: jxu023@ucr.edu
 
 github: http://github.com/jxu023
 
-http://stackoverflow.com/users/3773643/user3773643
+stackoverflow: http://stackoverflow.com/users/3773643/user3773643
 
 reddit: http://reddit.com/u/FeigntMango
 
