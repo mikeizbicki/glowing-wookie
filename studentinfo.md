@@ -4,12 +4,12 @@ Fork this repository with the fork button in the upper right corner.  Then edit 
 
 **Mike Izbicki**
 
-email: mike@izbicki.me
+email: drami025@ucr.edu 
 
-github: http://github.com/mikeizbicki
+github: http://github.com/drami025
 
-stackoverflow: http://stackoverflow.com/users/1241368/mike-izbicki
+stackoverflow: https://stackoverflow.com/users/3791448/daniel-ramirez
 
-reddit: http://reddit.com/u/PokerPirate
+reddit: http://reddit.com/u/drami025
 
-hacker news: https://news.ycombinator.com/user?id=jackpirate
+hacker news: https://news.ycombinator.com/user?id=drami025
