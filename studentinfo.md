@@ -36,3 +36,15 @@ stackoverflow: http://stackoverflow.com/users/3734820/user3734820
 reddit: http://reddit.com/u/CheriPai
 
 hacker news: https://news.ycombinator.com/user?id=CheriPai
+
+**Jacob Xu**
+
+email: jxu023@ucr.edu
+
+github: http://github.com/jxu023
+
+stackoverflow: http://stackoverflow.com/users/3773643/user3773643
+
+reddit: http://reddit.com/u/FeigntMango
+
+hacker news: https://news.ycombinator.com/user?id=FeigntMango
