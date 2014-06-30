@@ -15,13 +15,13 @@ reddit: http://reddit.com/u/PokerPirate
 hacker news: https://news.ycombinator.com/user?id=jackpirate
 
 
-**Dat Do**
-email: datdo@rocketmail.com
+**Paul Starkey**
+email: pstar001@ucr.edu
 
-github: http://github.com/CheriPai
+github: https://github.com/holidaylvr
 
-stackoverflow: http://stackoverflow.com/users/3734820/user3734820
+stackoverflow: http://stackoverflow.com/users/3742656/user3742656
 
-reddit: http://reddit.com/u/CheriPai
+reddit: http://www.reddit.com/user/pstar001/
 
-hacker news: https://news.ycombinator.com/user?id=CheriPai
+hacker news: https://news.ycombinator.com/user?id=holidaylvr
