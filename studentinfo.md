@@ -73,3 +73,15 @@ stackoverflow: http://stackoverflow.com/users/3569927/user3569927
 reddit: http://www.reddit.com/user/schir001/
 
 hacker news: https://news.ycombinator.com/user?id=schir001
+
+**Jonathan Dugan**
+
+email: jondugan@sbcglobal.net
+
+github: https://github.com/jduga002
+
+stackoverflow: http://stackoverflow.com/users/3791260/user3791260
+
+reddit: http://www.reddit.com/user/drizzitduddenbunnies/
+
+hacker news: https://news.ycombinator.com/user?id=drizzitdudden
