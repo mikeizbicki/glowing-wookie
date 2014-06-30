@@ -85,3 +85,11 @@ stackoverflow: http://stackoverflow.com/users/3791260/user3791260
 reddit: http://www.reddit.com/user/drizzitduddenbunnies/
 
 hacker news: https://news.ycombinator.com/user?id=drizzitdudden
+
+**Lorraine Diaz**
+
+email: ldiaz011@ucr.edu
+
+github: http://github.com/ldiaz011
+
+
