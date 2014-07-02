@@ -4,6 +4,8 @@
 
 learn you a haskell, chapters 5-9
 
+Try writing your own version of the following functions: `elem`, `words`, `zip`, `map`, `filter`, `foldr`.  You can find more info about these functions by searching on "hoogle": http://www.haskell.org/hoogle/?hoogle=elem.  If multiple functions of the same name are listed, you want the function in the Prelude module.
+
 **Week 2 (July 7)**
 
 learn you a haskell, chapters 10-14
