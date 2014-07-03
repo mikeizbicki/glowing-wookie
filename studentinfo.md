@@ -113,3 +113,13 @@ stackoverflow: http://stackoverflow.com/users/3742656/user3742656
 reddit: http://www.reddit.com/user/pstar001/
 
 hacker news: https://news.ycombinator.com/user?id=holidaylvr
+
+**Thomas Liu**
+
+email: tliu001@ucr.edu
+
+github: https://github.com/Liniarc
+
+reddit: http://www.reddit.com/user/Liniarc/
+
+hacker news: https://news.ycombinator.com/user?id=Tliu020
