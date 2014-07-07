@@ -125,3 +125,13 @@ stackoverflow: http://stackoverflow.com/users/3791438/richard
 reddit: http://www.reddit.com/user/rtran012/
 
 hackernews: https://news.ycombinator.com/user?id=rtran012
+
+**Thomas Liu**
+
+email: tliu001@ucr.edu
+
+github: https://github.com/Liniarc
+
+reddit: http://www.reddit.com/user/Liniarc/
+
+hacker news: https://news.ycombinator.com/user?id=Tliu020
