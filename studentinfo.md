@@ -113,3 +113,15 @@ stackoverflow: http://stackoverflow.com/users/3742656/user3742656
 reddit: http://www.reddit.com/user/pstar001/
 
 hacker news: https://news.ycombinator.com/user?id=holidaylvr
+
+**Richard Tran**
+
+email: rtran012@ucr.edu
+
+github: http://github.com/rtran012
+
+stackoverflow: http://stackoverflow.com/users/3791438/richard
+
+reddit: http://www.reddit.com/user/rtran012/
+
+hackernews: https://news.ycombinator.com/user?id=rtran012
