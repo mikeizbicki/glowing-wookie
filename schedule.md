@@ -4,11 +4,25 @@
 
 learn you a haskell, chapters 5-9
 
-Try writing your own version of the following functions: `elem`, `words`, `zip`, `map`, `filter`, `foldr`.  You can find more info about these functions by searching on "hoogle": http://www.haskell.org/hoogle/?hoogle=elem.  If multiple functions of the same name are listed, you want the function in the Prelude module.
+*Wednesday*: Try writing your own version of the following functions: `elem`, `words`, `zip`, `map`, `filter`, `foldr`.  You can find more info about these functions by searching on "hoogle": http://www.haskell.org/hoogle/?hoogle=elem.  If multiple functions of the same name are listed, you want the function in the Prelude module.
 
 **Week 2 (July 7)**
 
-learn you a haskell, chapters 10-14
+learn you a haskell, chapters 10-13 (14 not necessary)
+
+*Monday*:  Write a program that reads a file containing the information for many circles and rectangles, calculates their area, and returns the total.  Each line of the file will be one shape.  The line will be either:
+
+```
+Circle center radius
+```
+
+or
+
+```
+Rectangle top bottom left right
+```
+
+The point of this exercies is to get used to writing and testing pure functions, then linking them with the smallest amount of IO glue possible.  Create data types for `Circle` and `Rectangle`, create functions `parseCircle :: String -> Maybe Circle`, `parseRectangle :: String -> Maybe Rectangle`, `areaCircle :: Circle -> Double`, `areaRectangle :: Rectangle -> Double`.
 
 **Week 3 (July 14)**
 
