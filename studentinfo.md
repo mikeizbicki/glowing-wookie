@@ -128,7 +128,7 @@ hackernews: https://news.ycombinator.com/user?id=rtran012
 
 **Thomas Liu**
 
-email: tliu010@ucr.edu
+email: tliu020@ucr.edu
 
 github: https://github.com/Liniarc
 
