@@ -30,9 +30,10 @@ We'll be using the snap framework to build the webpage.  Run through [this tutor
 
 After following the tutorial, create a simple webpage.  You should have two routes on the page.  The first is `/about` which has just some dummy text.  The second is `/`.  This is the route that we're we'll eventually have the quiz.  For now, pick one of the following tasks for `/`:
 
-1. **sessions** We need to keep track of which people have answered which questions in order to present each user a new question.  We will use sessions to do this.  In snap, this functionality is provided by a [snaplet](http://snapframework.com/snaplets) called snaplet-sessions.  Track sessions for multiple users using the site at the same time, and print their session id's to the webpage.
+1. **sessions** We need to keep track of which people have answered which questions in order to present each user a new question.  We will use sessions to do this.  In snap, this functionality is provided by a [snaplet](http://snapframework.com/snaplets) called snaplet-sessions.  Track sessions for multiple users using the site at the same time, and print their session id's to the webpage.  (Jacob,Dat)
 
-2. **user information** We'll want to track EVERYTHING about the users.  For example, their IP address, what browser they're using, what operating system, and the time and date they access the page.  You'll have to figure out how to access this information from the snap api.  Print it out to the webpage.
+2. **user information** We'll want to track EVERYTHING about the users.  For example, their IP address, what browser they're using, what operating system, and the time and date they access the page.  You'll have to figure out how to access this information from the snap api.  Print it out to the webpage.  (Richard,Michelle)
+
 
 3. **reading/writing quizes**:  Create a set of data types that you think captures all the information we need to create a quiz.  Generate `Read` and `Show` instances for these types.  Create a few small examples on the hard drive.  Then have the `/` route pick one and display the information to the webpage.
 
