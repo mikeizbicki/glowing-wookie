@@ -37,7 +37,7 @@ After following the tutorial, create a simple webpage.  You should have two rout
 
 3. **reading/writing quizes**:  Create a set of data types that you think captures all the information we need to create a quiz.  Generate `Read` and `Show` instances for these types.  Create a few small examples on the hard drive.  Then have the `/` route pick one and display the information to the webpage.
 
-This reading is good if you have time, but not necessary: real world haskell, chapters 8-11
+This reading is good if you have time, but not necessary: [real world haskell](http://book.realworldhaskell.org/read/), chapters 8-11
 
 **Week 4 (July 21)**
 
