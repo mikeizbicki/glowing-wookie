@@ -1,0 +1,14 @@
+Soda Coke img/coke-can.jpg
+Soda Pepsi img/pepsi-can.png
+Airline Southwest_Airlines img/southwest.jpg
+Airline Delta_Airlines img/delta2.gif
+Airline Delta_Airlines img/delta2.gif
+Airline United_Airlines img/united.jpg
+Person Hitler Unlikely img/hitler.jpg
+Person Gandhi Definitely img/gandhi.jpg
+Person Gandhi Definitely img/gandhi.jpg
+Person Churchill Maybe img/churchhill.jpg
+Person Barack_Obama Maybe img/obama.jpg
+Person George_W._Bush Maybe img/obama.jpg
+PoltIssue Universal_Health_Care img/redcross.png
+PoltIssue Legalizing_Gay_Marriage img/gay.jpg
