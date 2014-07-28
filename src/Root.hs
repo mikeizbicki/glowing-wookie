@@ -34,6 +34,9 @@ sessionHandler header footer = method GET getter <|> method POST setter
             writeText "</br>IP Address: "
             printIPAddr
 
+            writeText "</br>"
+            getUserHeader
+
             writeBS footer
         setter = do
             mvalue <- getParam "Question"
@@ -64,3 +67,8 @@ printTime = do
             utcTime <- liftIO getCurrentTime
             writeText $ T.pack $ formatTime undefined "%F %T" utcTime
 
+
+getUserHeader :: Handler App App ()
+getUserHeader =  do
+            reqHeader <- getRequest -- :: Request -> Snap ByteString
+            writeBS (fromJust (getHeader "User-Agent" reqHeader))
