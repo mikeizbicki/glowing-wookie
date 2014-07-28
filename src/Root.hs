@@ -5,12 +5,12 @@ module Root
     where
 import           Snap
 import           Snap.Snaplet.Session
-import           Snap.Snaplet.Session.Backends.CookieSession
 import qualified Data.ByteString.Char8 as B
 import qualified Data.Text as T
 import           Data.Maybe
-import           Control.Lens.TH
 import           App
+import           Data.Time.Clock (getCurrentTime)
+import           Data.Time.Format
 
 --Handles GET and POST requests on / page
 sessionHandler :: B.ByteString -> B.ByteString -> Handler App App ()
@@ -19,12 +19,21 @@ sessionHandler header footer = method GET getter <|> method POST setter
         getter = do
             sessionList <- with sess $ sessionToList
             writeBS header
-            mapM_ (writeText . snd) sessionList
+            mapM_ (writeText . snd) sessionList --prints contents of cookie data
+
+            writeText "</br>Date: "
+            printTime
+            
+            --prints number of posts from cookie data
             writeText "</br>Posts: "
             let d = lookup "counter" sessionList
             case d of
                 Just d -> writeText d
                 Nothing -> withSession sess . withTop sess $ setInSession "counter" "0"
+
+            writeText "</br>IP Address: "
+            printIPAddr
+
             writeBS footer
         setter = do
             mvalue <- getParam "Question"
@@ -42,4 +51,16 @@ sessionHandler header footer = method GET getter <|> method POST setter
 addOne :: T.Text -> T.Text
 addOne x = T.pack $ show $ convert x + 1 
     where convert y = read $ T.unpack y :: Int
+
+
+printIPAddr :: Handler App App ()
+printIPAddr =  do
+            req <- getRequest -- :: Request -> Snap ByteString
+            writeBS (rqRemoteAddr req)
+
+
+printTime :: Handler App App ()
+printTime = do 
+            utcTime <- liftIO getCurrentTime
+            writeText $ T.pack $ formatTime undefined "%F %T" utcTime
 
