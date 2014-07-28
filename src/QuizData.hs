@@ -3,11 +3,12 @@ module QuizData
 , QuizData(..)
 , parseQuizData
 , readit
-, readQuizN
+, readit'
+, readQuiz
 , toQuizList
 ) where
 
-import System.Random
+--import System.Random
 
 
 
@@ -62,10 +63,11 @@ parsePoltIssue xs
                | length xs /= 2 = Nothing
                | otherwise      = Just $ PoltIssue (headwSpace xs) (last xs)
               
-              
-              
-readit :: String -> IO String
-readit filename = do
+             
+             
+--These two functions are now just for practice/reference              
+readit' :: String -> IO String
+readit' filename = do
     contents <- readFile filename
     return $ parseFile $ lines contents
     
@@ -75,7 +77,9 @@ parseFile (x:xs)
     | parseQuizData x == Nothing = "Not valid quiz data type<br>" ++ (parseFile xs)
     | otherwise                  = (show q) ++ "<br>" ++ (parseFile xs)
       where Just q = parseQuizData x
-      
+     
+
+     
 headwSpace :: [String] -> String
 headwSpace xs = map underscoreToSpace $ head xs 
 
@@ -84,17 +88,19 @@ underscoreToSpace '_' = ' '
 underscoreToSpace c = c
 
 
+readit :: String -> IO [QuizData]
+readit filename = do
+    contents <- readFile filename
+    return $ toQuizList $ lines contents
 
-readQuizN :: Int -> IO String
-readQuizN x
-    | x < 0     = return "Oops! No quiz!"
-    | x > 6     = return "Oops! No quiz!"
-    | otherwise = readit $ "./src/data/quiz" ++ (show x) ++ ".txt"
+--These functions will now be used to load up quizes
+readQuiz :: Int -> Int -> IO [QuizData]
+readQuiz x y = readit $ "./src/data/quiz" ++ (show x) ++ "/question" ++ (show y) ++ ".txt"
 
     
     
-toQuizList :: [String] -> [Maybe QuizData]
-toQuizList xs = map parseQuizData xs
+toQuizList :: [String] -> [QuizData]
+toQuizList xs = unMaybeQuizList $ map parseQuizData xs
 
 
 

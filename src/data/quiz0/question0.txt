@@ -1,0 +1,2 @@
+Soda Coke img/coke-can.jpg
+Soda Pepsi img/pepsi-can.png

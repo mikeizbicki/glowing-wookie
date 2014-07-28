@@ -28,5 +28,5 @@ main = do
     header <- B.readFile "./src/header.html"
     footer <- B.readFile "./src/footer.html"
     about <- B.readFile "./src/about.html"
-    quizdata <- readit "./src/quizdata.txt"
+    quizdata <- readit' "./src/quizdata.txt"
     serveSnaplet defaultConfig $ appInit header footer about quizdata
