@@ -6,6 +6,7 @@ module Main where
 import           Snap
 import           Snap.Snaplet.Session.Backends.CookieSession
 import qualified Data.ByteString.Char8 as B
+import           Snap.Util.FileServe
 import           App
 import           Root
 import           QuizData
@@ -18,6 +19,7 @@ appInit header footer about quizdata = makeSnaplet "myapp" "Sample Page" Nothing
     addRoutes [ ("/", sessionHandler header footer)
               , ("about", writeBS about)
               , ("quizdata", writeBS $ B.pack quizdata)
+              , ("img", serveDirectory "img")
               ]
     return $ App ss
 
