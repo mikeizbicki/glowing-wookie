@@ -3,12 +3,10 @@ module QuizData
 , QuizData(..)
 , parseQuizData
 , readit
-, readit'
 , readQuiz
 , toQuizList
+, displayQuizList
 ) where
-
---import System.Random
 
 
 
@@ -30,6 +28,7 @@ data QuizData = Soda { getName :: String
                           
                           
 
+--functions for parsing strings into QuizData
 parseQuizData :: String -> Maybe QuizData
 parseQuizData xs
               | xs == []             = Nothing
@@ -63,58 +62,36 @@ parsePoltIssue xs
                | length xs /= 2 = Nothing
                | otherwise      = Just $ PoltIssue (headwSpace xs) (last xs)
               
-             
-             
---These two functions are now just for practice/reference              
-readit' :: String -> IO String
-readit' filename = do
-    contents <- readFile filename
-    return $ parseFile $ lines contents
-    
-parseFile :: [String] -> String
-parseFile [] = ""
-parseFile (x:xs)
-    | parseQuizData x == Nothing = "Not valid quiz data type<br>" ++ (parseFile xs)
-    | otherwise                  = (show q) ++ "<br>" ++ (parseFile xs)
-      where Just q = parseQuizData x
-     
-
-     
+--some helper functions for parsing
 headwSpace :: [String] -> String
 headwSpace xs = map underscoreToSpace $ head xs 
 
 underscoreToSpace :: Char -> Char
 underscoreToSpace '_' = ' '
 underscoreToSpace c = c
+             
 
 
+--main function for reading in a file and converting to list of QuizData
 readit :: String -> IO [QuizData]
 readit filename = do
     contents <- readFile filename
     return $ toQuizList $ lines contents
 
---These functions will now be used to load up quizes
+--This function is used to load up quizes
 readQuiz :: Int -> Int -> IO [QuizData]
 readQuiz x y = readit $ "./src/data/quiz" ++ (show x) ++ "/question" ++ (show y) ++ ".txt"
 
     
-    
+--helper functions for reading in file;
+--toQuizList and displayQuizList can also be used by user
 toQuizList :: [String] -> [QuizData]
 toQuizList xs = unMaybeQuizList $ map parseQuizData xs
 
-
-
-{-randomQuiz :: String -> IO String
-randomQuiz filename = do
-    contents <- readFile filename
-    IO-stringify $ unMaybeQuizList $ map parseQuizData $ lines contents-}
+displayQuizList :: [QuizData] -> String
+displayQuizList [] = ""
+displayQuizList (x:xs) = (show x) ++ "<br>" ++ (displayQuizList xs)
 
 unMaybeQuizList :: [Maybe QuizData] -> [QuizData]
 unMaybeQuizList xs = let f = (\(Just x) -> x)
                      in map f $ filter (/= Nothing) xs
-                
-                
-               
-{-main = do 
-    quizdata <- readFile "./quizdata.txt"
-    putStrLn $ show $ head $ randomQuiz $ toQuizList $ lines quizdata-}

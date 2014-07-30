@@ -12,12 +12,12 @@ import           QuizData
 
 
 --Initializes the app to use Session Snaplet
-appInit :: B.ByteString -> B.ByteString -> B.ByteString -> String -> SnapletInit App App
+appInit :: B.ByteString -> B.ByteString -> B.ByteString -> [QuizData] -> SnapletInit App App
 appInit header footer about quizdata = makeSnaplet "myapp" "Sample Page" Nothing $ do
     ss <- nestSnaplet "session" sess $ initCookieSessionManager "session.txt" "_session" (Just 3600)
     addRoutes [ ("/", sessionHandler header footer)
               , ("about", writeBS about)
-              , ("quizdata", writeBS $ B.pack quizdata)
+              , ("quizdata", writeBS $ B.pack $ displayQuizList quizdata)
               ]
     return $ App ss
 
@@ -28,5 +28,5 @@ main = do
     header <- B.readFile "./src/header.html"
     footer <- B.readFile "./src/footer.html"
     about <- B.readFile "./src/about.html"
-    quizdata <- readit' "./src/quizdata.txt"
+    quizdata <- readit "./src/quizdata.txt"
     serveSnaplet defaultConfig $ appInit header footer about quizdata
