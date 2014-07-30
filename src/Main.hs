@@ -9,6 +9,7 @@ import qualified Data.ByteString.Char8 as B
 import           Snap.Util.FileServe
 import           App
 import           Root
+import           Display
 import           QuizData
 
 
@@ -20,8 +21,10 @@ appInit header footer about quizdata = makeSnaplet "myapp" "Sample Page" Nothing
               , ("about", writeBS about)
               , ("img", serveDirectory "img")
               , ("quizdata", writeBS $ B.pack $ displayQuizList quizdata)
+              --, ("quiz1/question1", writeBS $ B.pack $ display (head question) (last question) )
               ]
     return $ App ss
+    
 
 
 --Main function reads html files and calls session functions
@@ -31,4 +34,6 @@ main = do
     footer <- B.readFile "./src/footer.html"
     about <- B.readFile "./src/about.html"
     quizdata <- readit "./src/quizdata.txt"
+    quizes <- createQuizes
     serveSnaplet defaultConfig $ appInit header footer about quizdata
+    
