@@ -35,7 +35,7 @@ sessionHandler header footer = method GET getter <|> method POST setter
             printIPAddr
 
             writeText "</br>"
-            getUserHeader
+            printUserHeader
 
             writeBS footer
         setter = do
@@ -46,8 +46,12 @@ sessionHandler header footer = method GET getter <|> method POST setter
             case c of
                 Just c ->  withSession sess . withTop sess $ setInSession "counter" $ addOne c 
                 Nothing -> writeText "Error: counter not found"
+
+            writeData  $ convertStr mvalue
+
             getter
         convert = T.pack . B.unpack . (fromMaybe "set-error")
+        convertStr = show . B.unpack . fromJust
 
 
 --Used to increment visitor counter
@@ -62,13 +66,38 @@ printIPAddr =  do
             writeBS (rqRemoteAddr req)
 
 
+getIPAddr :: Handler App App String
+getIPAddr = do
+        req <- getRequest
+        return $ show $ rqRemoteAddr req
+
+
 printTime :: Handler App App ()
 printTime = do 
             utcTime <- liftIO getCurrentTime
             writeText $ T.pack $ formatTime undefined "%F %T" utcTime
 
 
-getUserHeader :: Handler App App ()
-getUserHeader =  do
+getTime :: IO String 
+getTime = fmap show getCurrentTime
+
+
+printUserHeader :: Handler App App ()
+printUserHeader =  do
             reqHeader <- getRequest -- :: Request -> Snap ByteString
             writeBS (fromJust (getHeader "User-Agent" reqHeader))
+
+
+getUserHeader :: Handler App App String
+getUserHeader = do
+            req <- getRequest
+            return $ show $ fromJust $ getHeader "User-Agent" req
+
+
+writeData :: String -> Handler App App ()
+writeData answer = do 
+            time <- liftIO $ getTime
+            ip <- getIPAddr
+            ua <- getUserHeader
+            liftIO . appendFile "data.csv" $ time ++ "," ++ ip ++ "," ++ ua ++ "," ++ answer ++ "\n"
+
