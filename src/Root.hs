@@ -11,6 +11,7 @@ import           Data.Maybe
 import           App
 import           Data.Time.Clock (getCurrentTime)
 import           Data.Time.Format
+import           Web.UAParser
 
 --Handles GET and POST requests on / page
 sessionHandler :: B.ByteString -> B.ByteString -> Handler App App ()
@@ -36,6 +37,11 @@ sessionHandler header footer = method GET getter <|> method POST setter
 
             writeText "</br>"
             printUserHeader
+
+            writeText "</br>"
+            getBrowser
+            writeText "</br>"
+            getOS
 
             writeBS footer
         setter = do
@@ -88,16 +94,23 @@ printUserHeader =  do
             writeBS (fromJust (getHeader "User-Agent" reqHeader))
 
 
-getUserHeader :: Handler App App String
-getUserHeader = do
-            req <- getRequest
-            return $ show $ fromJust $ getHeader "User-Agent" req
+getBrowser :: Handler App App String
+getBrowser = do
+        req <- getRequest
+        return $ show $ uarFamily $ fromJust $ parseUA $ fromJust (getHeader "User-Agent" req)
+
+
+getOS :: Handler App App String
+getOS = do
+        req <- getRequest
+        return $ show $ osrFamily $ fromJust $ parseOS $ fromJust (getHeader "User-Agent" req)
 
 
 writeData :: String -> Handler App App ()
 writeData answer = do 
             time <- liftIO $ getTime
             ip <- getIPAddr
-            ua <- getUserHeader
-            liftIO . appendFile "data.csv" $ time ++ "," ++ ip ++ "," ++ ua ++ "," ++ answer ++ "\n"
+            os <- getOS
+            browser <- getBrowser
+            liftIO . appendFile "data.csv" $ time ++ "," ++ ip ++ "," ++ os ++ "," ++ browser ++ "," ++ answer ++ "\n"
 
