@@ -1,5 +1,7 @@
 module QuizData
 ( QuizData(..)
+, Question
+, Quiz
 , parseQuizData
 , readit
 , readQuiz
@@ -55,6 +57,7 @@ readQuiz x = do
 
 createQuizes :: IO [Quiz]
 createQuizes = readQuiz 1 
+
               
     
 --helper functions for reading in file;

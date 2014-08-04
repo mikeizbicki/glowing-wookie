@@ -1,6 +1,6 @@
-Person Mahatma_Gandhi img/gandhi.jpg
-Person Winston_Churchill img/churchhill.jpg
-PoltIssue Universal_Health_Care img/redcross.png
-PoltIssue Legalizing_Gay_Marriage img/gay.jpg
-Soda Coke img/coke-can.jpg
-Soda Sprite img/pepsi-can.png
+Person Mahatma_Gandhi gandhi.jpg
+Person Winston_Churchill churchhill.jpg
+PoltIssue Universal_Health_Care redcross.png
+PoltIssue Legalizing_Gay_Marriage gay.jpg
+Soda Coke coke-can.jpg
+Soda Sprite pepsi-can.png
