@@ -16,6 +16,7 @@ type Quiz = [Question]
 data QuizData = QuizData { getType :: String
                          , getName :: String
                          , getPicURL :: String
+                         , getDescription :: String
                          } deriving (Read, Show, Eq)
                           
                           
@@ -23,12 +24,15 @@ data QuizData = QuizData { getType :: String
 --functions for parsing strings into QuizData
 parseQuizData :: String -> Maybe QuizData
 parseQuizData xs
-              | length quiz /= 3  = Nothing
-              | otherwise         = Just $ QuizData first second end
+              | length quiz < 3  = Nothing
+              | length quiz == 3 = Just $ QuizData first second end ""
+              | otherwise        = Just $ QuizData first second third description
                 where quiz   = words xs
                       end    = last $ quiz
                       first  = head $ quiz
                       second = map underscoreToSpace $ head $ tail quiz
+                      third  = map underscoreToSpace $ head $ tail $ tail quiz
+                      description = unwords $ tail $ tail $ tail quiz
                
 
 underscoreToSpace :: Char -> Char

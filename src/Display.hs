@@ -23,5 +23,5 @@ display q = "<html>\n\n"
 			 
 			 
 displayonething :: QuizData -> String
-displayonething x = "<a href=\"ex3.html\"><div class=\"queryobject\"><img src=\"/img/" 
+displayonething x = "<a href=\"ex3.html\"><div class=\"queryobject\" title =\"" ++ getDescription x ++ "\"><img src=\"/img/" 
 				 ++ getPicURL x ++ "\"><p>" ++ getName x ++ "</p></div></a>\n"
