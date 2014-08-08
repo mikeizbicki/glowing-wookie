@@ -11,6 +11,7 @@ import           Data.Maybe
 import           App
 import           Data.Time.Clock (getCurrentTime)
 import           Data.Time.Format
+import           Web.UAParser
 
 --Handles GET and POST requests on / page
 sessionHandler :: B.ByteString -> B.ByteString -> Handler App App ()
@@ -35,7 +36,12 @@ sessionHandler header footer = method GET getter <|> method POST setter
             printIPAddr
 
             writeText "</br>"
-            getUserHeader
+            printUserHeader
+
+            writeText "</br>"
+            getBrowser
+            writeText "</br>"
+            getOS
 
             writeBS footer
         setter = do
@@ -46,8 +52,12 @@ sessionHandler header footer = method GET getter <|> method POST setter
             case c of
                 Just c ->  withSession sess . withTop sess $ setInSession "counter" $ addOne c 
                 Nothing -> writeText "Error: counter not found"
+
+            writeData  $ convertStr mvalue
+
             getter
         convert = T.pack . B.unpack . (fromMaybe "set-error")
+        convertStr = show . B.unpack . fromJust
 
 
 --Used to increment visitor counter
@@ -62,13 +72,45 @@ printIPAddr =  do
             writeBS (rqRemoteAddr req)
 
 
+getIPAddr :: Handler App App String
+getIPAddr = do
+        req <- getRequest
+        return $ show $ rqRemoteAddr req
+
+
 printTime :: Handler App App ()
 printTime = do 
             utcTime <- liftIO getCurrentTime
             writeText $ T.pack $ formatTime undefined "%F %T" utcTime
 
 
-getUserHeader :: Handler App App ()
-getUserHeader =  do
+getTime :: IO String 
+getTime = fmap show getCurrentTime
+
+
+printUserHeader :: Handler App App ()
+printUserHeader =  do
             reqHeader <- getRequest -- :: Request -> Snap ByteString
             writeBS (fromJust (getHeader "User-Agent" reqHeader))
+
+
+getBrowser :: Handler App App String
+getBrowser = do
+        req <- getRequest
+        return $ show $ uarFamily $ fromJust $ parseUA $ fromJust (getHeader "User-Agent" req)
+
+
+getOS :: Handler App App String
+getOS = do
+        req <- getRequest
+        return $ show $ osrFamily $ fromJust $ parseOS $ fromJust (getHeader "User-Agent" req)
+
+
+writeData :: String -> Handler App App ()
+writeData answer = do 
+            time <- liftIO $ getTime
+            ip <- getIPAddr
+            os <- getOS
+            browser <- getBrowser
+            liftIO . appendFile "data.csv" $ time ++ "," ++ ip ++ "," ++ os ++ "," ++ browser ++ "," ++ answer ++ "\n"
+

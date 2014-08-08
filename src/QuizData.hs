@@ -1,70 +1,35 @@
 module QuizData
-( BoolM(..)
-, QuizData(..)
+( QuizData(..)
+, Question
+, Quiz
 , parseQuizData
 , readit
 , readQuiz
+, createQuizes
 , toQuizList
 , displayQuizList
 ) where
 
+type Question = (QuizData, QuizData)
+type Quiz = [Question]
 
-
-data BoolM = Unlikely | Maybe | Definitely deriving (Read, Show, Eq, Ord)
-
-data QuizData = Soda { getName :: String
-                     , getPicURL :: String
-                     } 
-              | Person { getName :: String
-                       , isGood :: BoolM
-                       , getPicURL :: String
-                       }
-              | Airline { getName :: String
-                        , getPicURL :: String
-                        } 
-              | PoltIssue { getName :: String
-                          , getPicURL :: String
-                          } deriving (Read, Show, Eq)
+data QuizData = QuizData { getType :: String
+                         , getName :: String
+                         , getPicURL :: String
+                         } deriving (Read, Show, Eq)
                           
                           
 
 --functions for parsing strings into QuizData
 parseQuizData :: String -> Maybe QuizData
 parseQuizData xs
-              | xs == []             = Nothing
-              | first == "Soda"      = parseSoda endxs
-              | first == "Person"    = parsePerson endxs
-              | first == "Airline"   = parseAirline endxs
-              | first == "PoltIssue" = parsePoltIssue endxs
-              | otherwise            = Nothing
-                where endxs = tail $ words xs
-                      first = head $ words xs
-              
-parseSoda :: [String] -> Maybe QuizData
-parseSoda xs
-          | length xs /= 2 = Nothing
-          | otherwise      = Just $ Soda (headwSpace xs) (last xs)
-          
-parsePerson :: [String] -> Maybe QuizData
-parsePerson xs
-            | length xs == 2 = Just $ Person (headwSpace xs) (Maybe) (last xs)
-            | length xs == 3 = Just $ Person (headwSpace xs) (f xs)  (last xs)
-            | otherwise      = Nothing
-              where f = read . head . tail
-              
-parseAirline :: [String] -> Maybe QuizData
-parseAirline xs
-             | length xs /= 2 = Nothing
-             | otherwise      = Just $ Airline (headwSpace xs) (last xs)
-              
-parsePoltIssue :: [String] -> Maybe QuizData
-parsePoltIssue xs
-               | length xs /= 2 = Nothing
-               | otherwise      = Just $ PoltIssue (headwSpace xs) (last xs)
-              
---some helper functions for parsing
-headwSpace :: [String] -> String
-headwSpace xs = map underscoreToSpace $ head xs 
+              | length quiz /= 3  = Nothing
+              | otherwise         = Just $ QuizData first second end
+                where quiz   = words xs
+                      end    = last $ quiz
+                      first  = head $ quiz
+                      second = map underscoreToSpace $ head $ tail quiz
+               
 
 underscoreToSpace :: Char -> Char
 underscoreToSpace '_' = ' '
@@ -78,10 +43,22 @@ readit filename = do
     contents <- readFile filename
     return $ toQuizList $ lines contents
 
---This function is used to load up quizes
-readQuiz :: Int -> Int -> IO [QuizData]
-readQuiz x y = readit $ "./src/data/quiz" ++ (show x) ++ "/question" ++ (show y) ++ ".txt"
+questionTuple :: [QuizData] -> Quiz
+questionTuple [] = []
+questionTuple (x:y:ys) = (x,y) : questionTuple ys
 
+--This function is used to load up quizes
+readQuiz :: Int -> IO [Quiz]
+readQuiz 4 = return []
+readQuiz x = do
+    listofQuizData <- readit $ "./src/data/quiz" ++ (show x) ++ ".txt"
+    listofQuiz <- readQuiz (x + 1)
+    return $ (questionTuple listofQuizData) : listofQuiz
+
+createQuizes :: IO [Quiz]
+createQuizes = readQuiz 1 
+
+              
     
 --helper functions for reading in file;
 --toQuizList and displayQuizList can also be used by user

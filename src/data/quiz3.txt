@@ -1,0 +1,6 @@
+Person Adolf_Hitler gandhi.jpg
+Person Winston_Churchill churchhill.jpg
+PoltIssue Universal_Health_Care redcross.png
+PoltIssue Legalizing_Gay_Marriage gay.jpg
+Soda Coke coke-can.jpg
+Soda Pepsi pepsi-can.png
