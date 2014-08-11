@@ -22,15 +22,14 @@ sessionHandler header footer = method GET getter <|> method POST setter
             sessionList <- with sess $ sessionToList
             writeBS header
 
-            ref <- getReferer
-            let r = lookup "referer" sessionList
-            case r of
+            let mR = lookup "referer" sessionList
+            case mR of
                 Just r -> return ()
-                Nothing -> withSession sess . withTop sess $ setInSession "referer" "\\"
-            let r = lookup "referer" sessionList
-            if r == Just "\\"
-                then withSession sess . withTop sess $ setInSession "referer" ref
-                else return ()
+                Nothing -> do
+                    mRef <- getReferer
+                    case mRef of
+                        Just ref -> withSession sess . withTop sess $ setInSession "referer" ref
+                        Nothing -> return ()
 
             sessionList <- with sess $ sessionToList
 
@@ -43,8 +42,8 @@ sessionHandler header footer = method GET getter <|> method POST setter
             mvalue <- getParam "Question"
             withSession sess . withTop sess $ setInSession ("Question") (convert mvalue)
             sessionList <- with sess $ sessionToList
-            let c = lookup "counter" sessionList
-            case c of
+            let mC = lookup "counter" sessionList
+            case mC of
                 Just c ->  withSession sess . withTop sess $ setInSession "counter" $ addOne c 
                 Nothing -> withSession sess . withTop sess $ setInSession "counter" "1"
             let ref = lookup "referer" sessionList
@@ -116,10 +115,10 @@ getURL = do
         return $ show $ fromJust $ getHeader "Referer" req
 
 
-getReferer :: Handler App App T.Text
+getReferer :: Handler App App (Maybe T.Text)
 getReferer = do
         req <- getRequest
-        return $ T.pack $ B.unpack $ fromMaybe "" $ getHeader "Referer" req
+        return $ fmap (T.pack . B.unpack) $ getHeader "Referer" req
 
 
 printDebugInfo :: [(T.Text,T.Text)] -> Handler App App ()
