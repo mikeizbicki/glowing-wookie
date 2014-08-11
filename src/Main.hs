@@ -11,6 +11,7 @@ import           App
 import           Root
 import           Display
 import           QuizData
+import           System.Random
 
 
 --Initializes the app to use Session Snaplet
@@ -46,4 +47,10 @@ getQuizesH x (q:qs) = getOneQuiz x 1 q ++ getQuizesH (x + 1) qs
 
 getOneQuiz :: (MonadSnap m) => Int -> Int -> Quiz -> [(B.ByteString, m ())]
 getOneQuiz _ _ [] = []
-getOneQuiz x y (q:qs) = [(B.pack("quiz" ++ (show x) ++ "/question" ++ (show y)), writeBS $ B.pack $ display q)] ++ getOneQuiz x (y + 1) qs
+getOneQuiz x y (q:qs) = [(B.pack("quiz" ++ (show x) ++ "/question" ++ (show y)), mkPage)] ++ getOneQuiz x (y + 1) qs
+    where 
+        mkPage = do
+            
+            r1 <- liftIO $ randomRIO (1,3)
+            r2 <- liftIO $ randomRIO (1,3)
+            writeBS $ B.pack $ display r1 r2 q

@@ -1,6 +1,6 @@
-Person Mahatma_Gandhi gandhi.jpg
-Person Winston_Churchill churchhill.jpg
-PoltIssue Universal_Health_Care redcross.png
-PoltIssue Legalizing_Gay_Marriage gay.jpg
-Soda Coke coke-can.jpg
-Soda Pepsi pepsi-can.png
+Person Mahatma_Gandhi gandhi.jpg This is a test
+Person Winston_Churchill churchhill.jpg a test!
+PoltIssue Universal_Health_Care redcross.png a test!
+PoltIssue Legalizing_Gay_Marriage gay.jpg a test!
+Soda Coke coke-can.jpg a test!
+Soda Pepsi pepsi-can.png a test!
