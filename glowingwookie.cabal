@@ -25,7 +25,7 @@ Executable glowingwookie
     text,
     snap,
     time,
-    ua-parser
+    random
 
   if impl(ghc >= 6.12.0)
     ghc-options: -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2
