@@ -1,8 +1,7 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Root
-    where
+module Root where
 import           Snap
 import           Snap.Snaplet.Session
 import qualified Data.ByteString.Char8 as B
