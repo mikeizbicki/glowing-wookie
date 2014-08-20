@@ -8,15 +8,14 @@ Person Beyonce_Knowles Beyonce.jpg Singer/Performer famous for such hits as 'All
 Person Rihanna Rihanna2012.jpg Singer/Performer famous for such hits as 'Shut up and drive' and 'Rude Boy'
 Person Nikola_Tesla Tesla_circa_1890.jpg
 Person Thomas_Edison Thomas_Edison2.jpg
-Person Steve_Jobs Steve_Jobs.jpg Head of the Apple Computer Corporation famous for inventing devices like the iPhone, iPad, and iPod
-Person Bill_Gates Bill_Gates_July_2014.jpg Former CEO and co-founder of the Microsoft Corporation, which makes the widely used Windows operating system
-Person Mark_Zuckerberg Mark_Zuckerberg.jpg Founder of the social network website Facebook
-Person Steve_Jobs Steve_Jobs.jpg Head of the Apple Computer Corporation famous for inventing devices like the iPhone, iPad, and iPod
+Person Steve_Jobs SteveJobs.jpg Head of the Apple Computer Corporation famous for inventing devices like the iPhone, iPad, and iPod
+Person Bill_Gates BillGates.jpg Former CEO and co-founder of the Microsoft Corporation, which makes the widely used Windows operating system
+Person Mark_Zuckerberg MarkZuckerberg.jpg Founder of the social network website Facebook
 Person Jesus_Christ Bloch-SermonOnTheMount.jpg Founder of Christianity
 Person Muhammad Muhammad.png Prophet of Allah and founder of Islam.(His depiction is not allowed to be shown in art.)
 Person Henry_VIII HenryVIII.jpg King of England best known for marrying six wives and having many of them beheaded
-Person Richard_III Richard_III_earliest_surviving_portrait.jpg King of England who allegedly had his nephews killed so he could be king
-Person Luke_Skywalker Luke_Skywalker.png A famous jedi from Star Wars
+Person Richard_III RichardIII.jpg King of England who allegedly had his nephews killed so he could be king
+Person Luke_Skywalker LukeSkywalker.png A famous jedi from Star Wars
 Person Captain_Kirk Star_Trek_William_Shatner.jpg Captain of the USS Enterprise in Star Trek
 Person Albus_Dumbledore Dumbledore_and_Elder_Wand.jpg A great wizard who is Headmaster of Hogwarts in Harry Potter
 Person Gandalf gandalf.jpg A wizard from The Lord of the Rings who works to bring down the evil Sauron
@@ -26,9 +25,9 @@ Person Superman Superman.jpg Iconic American superhero
 Person Batman Comic_Art_-_Batman_by_Jim_Lee.png The Caped Crusader
 Person Iron_Man SJPA_Iron_Man_1.png I am Iron Man!
 Person Captain_America capam4.jpg Avengers Assemble!
-Person The_Hulk incredible-hulk-wallpapers-278937.jpg HULK SMASH!!
+Person The_Hulk incrediblehulk.jpeg HULK SMASH!!
 Person Thing The_Thing.gif It's clobberin' time!
-Person Catwoman Catwoman_0007 Cat burglar and friend(?) of Batman
+Person Catwoman Catwoman.jpg Cat burglar and friend(?) of Batman
 Person Wonder_Woman wonder-woman-comic-606.jpg Warrior princess of the Amazons
 Person J._R._R._Tolkien Tolkien_1916.jpg Author of 'The Hobbit' and 'The Lord of the Rings'
 Person C._S._Lewis Cslewis3.jpg Author of 'The Chronicles of Narnia' and 'The Screwtape Letters'
@@ -37,12 +36,11 @@ Person Malcolm_X 653px-Malcolm_X_NYWTS_2a.jpg Civil Rights activist and member o
 Person Oprah_Winfrey oprahwinfrey_2005.jpg Famous talk show host
 Person Ellen_DeGeneres Ellen-DeGeneres-s07.jpg Famous talk show host
 Person Dr._Phil DrPhil.jpg Famous psychologist who hosts his own tv show
-Person Dr._Oz 614px-Mehmet_Oz_-_World_Economic_Forum_Annual_Meeting_2012.jpg Famous medical doctor and tv personality
+Person Dr._Oz Oz.jpg Famous medical doctor and tv personality
 Person Mark_Wahlberg Mark_Wahlberg.jpg Famous American actor
 Person Matt_Damon Matt_Damon_2014.jpg Famous American actor
 Person Scarlett_Johansson scarlett.jpg Famous American actress
 Person Megan_Fox Megan-Fox-Pink-Dress.jpg Famous actress and model
 Person Hillary_Clinton Hillary_Clinton.jpg Former Secretary of State, U.S. Senator, and First Lady
-Person Sarah_Palin Sarah_Palin_7.jpg Former governor of Alaska and Repulican nominee for vice president
 Person Sarah_Palin Sarah_Palin_7.jpg Former governor of Alaska and Repulican nominee for vice president
 Person Tina_Fey tinafey.jpg Famous actress and comedian on SNL and many movies
