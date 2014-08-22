@@ -1,4 +1,5 @@
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE GADTs #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module Main where
@@ -12,6 +13,12 @@ import           Root
 import           Display
 import           QuizData
 import           System.Random
+import           Snap.Snaplet.Session
+import qualified Data.Text as T
+import           Web.UAParser
+import           Data.Time.Clock (getCurrentTime)
+import           Data.Time.Format
+import           Data.Maybe
 
 
 --Initializes the app to use Session Snaplet
@@ -22,7 +29,7 @@ appInit header footer about quizes = makeSnaplet "myapp" "Sample Page" Nothing $
                 , ("about", writeBS about)
                 , ("img", serveDirectory "img")
                 , ("css", serveDirectory "css")
-                ] ++ getQuizes quizes
+                ] ++ getQuizes quizes 
               )
     return $ App ss
     
