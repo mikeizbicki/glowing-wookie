@@ -38,7 +38,7 @@ Drink Almond_Milk Amilk.jpg Almond milk is a beverage made from ground almonds, 
 Drink Cow_Milk Cmilk.jpg Cow milk.
 Drink Water water.jpg So clear.
 Drink Soda soda.jpg Soda.
-Drink Expresso expresso.jpg Espresso is coffee brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans. Espresso is generally thicker than coffee brewed by other methods, has a higher concentration of suspended and dissolved solids, and has crema on top (a foam with a creamy consistency). As a result of the pressurized brewing process, the flavors and chemicals in a typical cup of espresso are very concentrated. Espresso is the base for other drinks, such as a caffè latte, cappuccino, caffè macchiato, cafe mocha, or caffè Americano.
+Drink Expresso expresso.jpg Espresso is coffee brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans. Espresso is generally thicker than coffee brewed by other methods, has a higher concentration of suspended and dissolved solids, and has crema on top (a foam with a creamy consistency). As a result of the pressurized brewing process, the flavors and chemicals in a typical cup of espresso are very concentrated. Espresso is the base for other drinks, such as a caffÃ¨ latte, cappuccino, caffÃ¨ macchiato, cafe mocha, or caffÃ¨ Americano.
 Drink Latte latte.jpg A latte is a coffee drink made with espresso and steamed milk.
 Drink Choloate_Milk chocm.png Chocolate milk.
 Drink Strawberry_Milk strawberry.JPG Strawberry flavored milk.

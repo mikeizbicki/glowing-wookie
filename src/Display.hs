@@ -34,11 +34,8 @@ display r1 r2 r3 q = "<html>\n\n"
 			 
 			 
 displayonething :: Int -> Int -> Int -> QuizData -> String
-{-displayonething x = "<a href=\"ex3.html\"><div class=\"queryobject\"><img src=\"/img/" 
-				 ++ getPicURL x ++ "\"><p>" ++ getName x ++ "</p></div></a>\n"
--}
 displayonething r1 r2 r3 x = "<form name=\"input\" action=\"/quiz" ++ show r1 ++ "/item" ++ show r2 ++ "/item" ++ show r3 ++ "\" method=\"push\" title=\"" ++ getDescription x ++ "\">\n"
 				 ++ "<p><strong>" ++ getName x ++ "</strong></p>\n"
-				 ++ "<input type=\"image\" name=\"Question\" value=\"" ++ ans ++ "\"src=\"/img/" ++ getPicURL x ++ "\" id=\"imgWidth\">\n"
+				 ++ "<input type=\"image\" src=\"/img/" ++ getPicURL x ++ "\" id=\"imgWidth\">\n"
 				 ++ "</form>\n"
 				 
