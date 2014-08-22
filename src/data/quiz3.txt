@@ -1,6 +1,46 @@
-Person Adolf_Hitler gandhi.jpg
-Person Winston_Churchill churchhill.jpg
-PoltIssue Universal_Health_Care redcross.png
-PoltIssue Legalizing_Gay_Marriage gay.jpg
-Soda Coke coke-can.jpg
-Soda Pepsi pepsi-can.png
+Person Mahatma_Gandhi gandhi.jpg Spiritual and political leader in India who opposed British rule with a new form of nonviolent civil disobedience
+Person Adolf_Hitler hitler.jpg Leader of the Nazi party who started WWII and was responsible for the genocide of 6 million Jews
+Person Winston_Churchill churchhill.jpg Prime Minister of England during WWII
+Person FDR fdr.jpg President of the United States during the Great Depression and WWII
+Person George_W._Bush George-W-Bush.jpg Republican President of the United States during 9/11 and the War on Terror
+Person Barack_Obama obama.jpg Current Democratic President of the United States
+Person Beyonce_Knowles Beyonce.jpg Singer/Performer famous for such hits as 'All the Single Ladies'
+Person Rihanna Rihanna2012.jpg Singer/Performer famous for such hits as 'Shut up and drive' and 'Rude Boy'
+Person Nikola_Tesla Tesla_circa_1890.jpg
+Person Thomas_Edison Thomas_Edison2.jpg
+Person Steve_Jobs SteveJobs.jpg Head of the Apple Computer Corporation famous for inventing devices like the iPhone, iPad, and iPod
+Person Bill_Gates BillGates.jpg Former CEO and co-founder of the Microsoft Corporation, which makes the widely used Windows operating system
+Person Mark_Zuckerberg MarkZuckerberg.jpg Founder of the social network website Facebook
+Person Jesus_Christ Bloch-SermonOnTheMount.jpg Founder of Christianity
+Person Muhammad Muhammad.png Prophet of Allah and founder of Islam.(His depiction is not allowed to be shown in art.)
+Person Henry_VIII HenryVIII.jpg King of England best known for marrying six wives and having many of them beheaded
+Person Richard_III RichardIII.jpg King of England who allegedly had his nephews killed so he could be king
+Person Luke_Skywalker LukeSkywalker.png A famous jedi from Star Wars
+Person Captain_Kirk Star_Trek_William_Shatner.jpg Captain of the USS Enterprise in Star Trek
+Person Albus_Dumbledore Dumbledore_and_Elder_Wand.jpg A great wizard who is Headmaster of Hogwarts in Harry Potter
+Person Gandalf gandalf.jpg A wizard from The Lord of the Rings who works to bring down the evil Sauron
+Person Darth_Vader sc4-darth-vader-art.jpg A powerful jedi who went to the dark side of the Force and became a sith who worked for the Galactic Empire
+Person Sauron Eye_of_sauron.jpg In The Lord of the Rings, he made the One Ring to control and rule all of Middle-Earth
+Person Superman Superman.jpg Iconic American superhero
+Person Batman Comic_Art_-_Batman_by_Jim_Lee.png The Caped Crusader
+Person Iron_Man SJPA_Iron_Man_1.png I am Iron Man!
+Person Captain_America capam4.jpg Avengers Assemble!
+Person The_Hulk incrediblehulk.jpeg HULK SMASH!!
+Person Thing The_Thing.gif It's clobberin' time!
+Person Catwoman Catwoman.jpg Cat burglar and friend(?) of Batman
+Person Wonder_Woman wonder-woman-comic-606.jpg Warrior princess of the Amazons
+Person J._R._R._Tolkien Tolkien_1916.jpg Author of 'The Hobbit' and 'The Lord of the Rings'
+Person C._S._Lewis Cslewis3.jpg Author of 'The Chronicles of Narnia' and 'The Screwtape Letters'
+Person Martin_Luther_King,_Jr. 742px-Martin_Luther_King_Jr_NYWTS.jpg Leader of the American Civil Rights Movement
+Person Malcolm_X 653px-Malcolm_X_NYWTS_2a.jpg Civil Rights activist and member of Nation of Islam
+Person Oprah_Winfrey oprahwinfrey_2005.jpg Famous talk show host
+Person Ellen_DeGeneres Ellen-DeGeneres-s07.jpg Famous talk show host
+Person Dr._Phil DrPhil.jpg Famous psychologist who hosts his own tv show
+Person Dr._Oz Oz.jpg Famous medical doctor and tv personality
+Person Mark_Wahlberg Mark_Wahlberg.jpg Famous American actor
+Person Matt_Damon Matt_Damon_2014.jpg Famous American actor
+Person Scarlett_Johansson scarlett.jpg Famous American actress
+Person Megan_Fox Megan-Fox-Pink-Dress.jpg Famous actress and model
+Person Hillary_Clinton Hillary_Clinton.jpg Former Secretary of State, U.S. Senator, and First Lady
+Person Sarah_Palin Sarah_Palin_7.jpg Former governor of Alaska and Repulican nominee for vice president
+Person Tina_Fey tinafey.jpg Famous actress and comedian on SNL and many movies
