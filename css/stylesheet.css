@@ -9,13 +9,21 @@ body {
     background-color: #b7d1c4;
 }
 
-.container {
-    /*width: 100%;*/
+/*.container {
+    /*width: 100%;
     margin-left:5%;
     margin-right:5%;
     padding: 20px;
     text-align: center;
     float:center;
+    height: 72%;
+    border: 2px solid black;
+}*/
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
     height: 72%;
 }
 
@@ -27,12 +35,26 @@ body {
     width: 40%;
     /*border:5px white solid;*/
     opacity: 0.8;
+    float: left;
+    display: inline-block;
+    vertical-align: middle; 
+}
 
+.queryobject2 {
+    width: 40%;
+    /*border:5px white solid;*/
+    opacity: 0.8;
+    /*float: right;*/
     display: inline-block;
     vertical-align: middle; 
 }
 
 .queryobject:hover {
+    /*border:5px black solid;*/
+    opacity: 1;
+}
+
+.queryobject2:hover {
     /*border:5px black solid;*/
     opacity: 1;
 }
@@ -54,6 +76,14 @@ p {
     color: black;
 }
 
+.thumbnail {
+    float: left;
+    width: 110px;
+    height: 90px;
+    margin: 5px;
+}
+
+
 img {
     width: 100%;
            /*width: 200px;*/
@@ -72,12 +102,14 @@ img {
 
 #footer{
 	clear: both;
-	position: relative;
-	bottom: -15px;
+	position: absolute;
+	bottom: 0px;
 	/*border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;*/
 	height: 55px;
 	background-color: #3c4543;
+    width: 100%;
+    color: #b7d1c4;
 }
 h2 {
 	color: #b7d1c4;
@@ -87,4 +119,17 @@ h2 {
 
 #imgWidth {
 	width: 60%;
+}
+
+#or {
+    position: absolute;
+    max-width:5%;
+    max-height:7%;
+    margin-left: -4.63241%;
+    margin-top: 0%;
+}
+
+#pfoot {
+    color: #b7d1c4;
+    vertical-align: middle;
 }
