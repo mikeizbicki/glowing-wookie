@@ -40,6 +40,7 @@ display r1 r2 r3 numAns q = "<!DOCTYPE html>\n"
 displayonething :: Int -> Int -> Int -> String -> QuizData -> String
 displayonething r1 r2 r3 ans x = "<form name=\"input\" action=\"/quiz" ++ show r1 ++ "/item" ++ show r2 ++ "/item" ++ show r3 ++ "\" method=\"post\" title=\"" ++ getDescription x ++ "\">\n"
 				 ++ "<p><strong>" ++ getName x ++ "</strong></p>\n"
-				 ++ "<input type=\"image\" name=\"Question\" value=\"" ++ ans ++ "\" src=\"/img/" ++ getPicURL x ++ "\" id=\"imgWidth\">\n"
+				 ++ "<input type=\"image\" name=\"submit\" src=\"/img/" ++ getPicURL x ++ "\" id=\"imgWidth\">\n"
+                 ++ "<input type=\"hidden\" name=\"Question\" value=\"" ++ ans ++"\">"
 				 ++ "</form>\n"
 				 

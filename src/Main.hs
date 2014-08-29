@@ -84,13 +84,12 @@ getQuizes xs = getQuizesH 1 xs
                       --Gets CSRF token from session data
                       csrf <- with sess $ csrfToken
                       --Writes user data to csv file
-                      --liftIO $ putStrLn $ convertStr mvalue
+                      liftIO $ putStrLn $ convertStr mvalue
                       writeData (convertStr mvalue) (show csrf) (show $ fromMaybe "" ref)
                       mkPage
                   
                   convert = T.pack . B.unpack . fromMaybe "set-error"
                   convertStr = show . B.unpack . fromMaybe ""
- 
                   randomNotNumIO r1 r2 = do
                       r3 <- liftIO $ randomRIO (1,listOfSizes !! (r1 - 1) )
                       if r2 /= r3 then return r3
